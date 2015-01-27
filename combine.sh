@@ -9,12 +9,15 @@ OUTPUT_FILE="output/combined_gapMinder.tsv"
 echo Building combined country data file
 cat data/clean/country.cc.txt > $OUTPUT_FILE
 
+# moves file so that it is not concatenated with the other.cc files.
 mv -v data/clean/country.cc.txt data/clean/country.cc.processed
 sleep 2
 
+# >> concatenates all of the files.
 cat data/clean/*.cc.txt 
 sleep 2
 cat data/clean/*.cc.txt >> $OUTPUT_FILE
+
 
 mv -v data/clean/country.cc.processed data/clean/country.cc.txt
 
