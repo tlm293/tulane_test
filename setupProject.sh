@@ -1,8 +1,9 @@
-#!/bin/bash
+ #!/bin/bash
 
 ##########################################################
 # This script will download the split gap minder zip file,
-# unzip it, 
+# unzip it, makes some directories, and backs up the data
+# into an archive folder. 
 ##########################################################
 
 
